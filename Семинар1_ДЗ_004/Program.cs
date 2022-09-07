@@ -2,15 +2,16 @@
 
 Console.WriteLine("Введите число:");
 string var = Console.ReadLine();
-int number = int.Parse(var);
+double number = double.Parse(var);
 
-if (number > 1)
+if (number >= 2)
 {
-     int n = number;
-     for (int i = 2; i <= n; i++);
-          Console.Write($"{n}");
+     for (int i = 2; i <= number; i = i+2)
+     {
+          Console.Write(i + "  ");
+     }
 }
 else
 {
-Console.Write("Число меньше или равно 1.");
+Console.Write("Число меньше 2.");
 }
